@@ -1,0 +1,150 @@
+.ova-testimonial-3 {
+	
+	&.template_1 {
+		.wrapper {
+			display: flex;
+			gap: 53px;
+			align-items: center;
+			@media screen and (max-width: 600px) {
+				flex-direction: column;
+			}
+		}
+		.client_info {
+			background: #0C0B0B;
+			.testimonial {
+				color: #fff;
+			}
+			.info {
+				.name-job {
+					.name {
+						color: #FFF;
+					}
+					.job {
+						color: rgba(255, 255, 255, 0.65);
+					}
+				}
+			} 
+		}
+		.list-avatar {
+			flex: 0 0 55px;
+			margin: 0;
+			padding: 0;
+			list-style: none;
+			display: flex;
+			flex-direction: column;
+			gap: 10px;
+			@media screen and (max-width: 600px) {
+				flex-direction: row;
+				flex-wrap: wrap;
+			}
+			.item {
+				&.active {
+					img {
+						border: 3px solid var(--primary);
+					}
+				}
+				img {
+					display: block;
+					width: 55px;
+					height: 55px;
+					border-radius: 50%;
+					overflow: hidden;
+				}
+			}
+		}
+	}
+	&.template_2 {
+		.client_info {
+			background: #fff;
+			.info {
+				.name-job {
+					.name {
+						color: var(--heading);
+					}
+				}
+			}
+		}
+		.ova-dots {
+			.owl-dot {
+				span {
+					background: rgba(29, 27, 26, 0.20);
+				}
+			}
+		}
+	}
+
+	.client_info {
+		padding: 60px 40px 50px 50px;
+		@media screen and (max-width: 480px) {
+			padding: 40px 30px 40px 30px;
+		}
+		.testimonial {
+			margin: 0;
+		}
+		.info {
+			display: flex;
+			align-items: center;
+			gap: 25px;
+			margin-top: 30px;
+			.client {
+				flex: 0 0 55px;
+				img {
+					display: block;
+					width: 55px;
+					height: 55px;
+					border-radius: 50%;
+					overflow: hidden;
+				}
+			}
+			.name-job {
+				.name {
+					margin: 0;
+					font-family: var(--secondary-font);
+					font-size: 24px;
+					font-weight: 700;
+					line-height: 1;
+				}
+				.job {
+					margin: 0;
+					margin-top: 10px;
+					line-height: 1;
+				}
+			}
+		} 
+	}
+	.slide-testimonials{
+		overflow: hidden;
+	}
+	.ova-dots {
+		margin-top: 60px;
+		.owl-dot{
+			display: inline-flex;
+			align-items: center;
+			justify-content: center;
+			border-radius: 50%;
+			margin: 0 2px;
+			width: 21px;
+			padding: 0;
+			background: transparent;
+			border-color: transparent;
+			height: 21px;
+			span{
+				width: 5px;
+				height: 5px;
+				background: rgba(255, 255, 255, 0.2);
+				display: block;
+				border-radius: inherit;
+				-webkit-backface-visibility: visible;
+				transition: opacity .2s ease;
+			}
+			&.active{
+				border: 1px solid var(--primary);
+				span{
+					opacity: 1;
+					background: var(--primary);
+				}
+			}
+		}
+	}
+	
+}

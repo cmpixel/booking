@@ -1,0 +1,79 @@
+// General Output Message
+.wpcf7 form.invalid .wpcf7-response-output, .wpcf7 form.unaccepted .wpcf7-response-output
+,.wpcf7 form.failed .wpcf7-response-output, .wpcf7 form.aborted .wpcf7-response-output {
+	border-color: red;
+	color: red;
+}
+.wpcf7 form.sent .wpcf7-response-output {
+    border-color: green;
+    color: green;
+}
+.ova-response-output-black {
+	.wpcf7 form.sent .wpcf7-response-output {
+	    color: var(--heading);
+	}
+}
+
+// General Ova Contact Form
+.ova-ctform {
+	position: relative;
+	p {
+		margin: 0;
+	}
+	.two_column {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-column-gap: 20px;
+
+		@media screen and ( max-width: 600px ) {
+			grid-template-columns: 1fr;
+		}
+	}
+	.ova_wrap_input {
+		margin-bottom: 20px;
+		label {
+			display: inline-block;
+			margin: 0 0 6px 0;
+			font-family: var(--secondary-font);
+			font-weight: 600;
+			color: var(--heading);
+		}
+	}
+	input, textarea, select:not([size]):not([multiple]) {
+		font-weight: 500;
+		border-radius: 0;
+		border: 1px solid rgba(9, 8, 8, 0.1);
+		padding: 15px 20px;
+		width: 100%;
+		&::placeholder {
+			opacity: 1;
+		}
+		&:focus {
+			border-color: var(--primary);
+		}
+	}
+	textarea {
+		height: 170px;
+	}
+	.wpcf7-submit {
+		border: 0;
+		padding: 15px 40px;
+		border-radius: 0;
+		font-weight: 500;
+		i {
+			vertical-align: middle;
+			display: inline-flex;
+			line-height: 1;
+			margin-left: 10px;
+		}
+		&:hover {
+			color: #fff;
+			background: var(--primary-hover);
+		}
+	}
+	.wpcf7-spinner {
+		position: absolute;
+		right: 0;
+		bottom: 20px;
+	}
+}

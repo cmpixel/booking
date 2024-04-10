@@ -1,0 +1,75 @@
+.ova-icon-box-slide {
+	.slider {
+		.owl-stage-outer {
+			padding: 60px 0px;
+		}
+	}
+	.card {
+		padding: 34px 40px 40px 40px;
+		background: #F4F2F1;
+		transition: all .3s linear;
+		&:hover {
+			background: #fff;
+			box-shadow: rgba(0, 0, 0, 0.10) 0px 4px 60px;
+		}
+		.number {
+			margin: 0;
+		}
+		.title {
+			margin: 0;
+			margin-top: 23px;
+			font-size: 27px;
+			a {
+				font-size: 27px;
+				color: var(--heading);
+				transition: all .3s linear;
+				&:hover {
+					text-decoration: underline;
+				}
+			}
+		}
+		.desc {
+			margin: 0;
+			margin-top: 22px;
+		}
+		.icon {
+			margin-top: 30px;
+			display: flex;
+			i {
+				flex-shrink: 0;
+				font-size: 50px;
+				line-height: 1;
+				display: inline-flex;
+				color: var(--primary);
+			}
+		}
+	}
+	.owl-dots{
+		text-align: center;
+		.owl-dot{
+			display: inline-flex;
+			align-items: center;
+			justify-content: center;
+			border-radius: 50%;
+			margin: 0 2px;
+			width: 21px;
+			height: 21px;
+			span{
+				width: 5px;
+				height: 5px;
+				background: rgba(29, 27, 26, 0.20);
+				display: block;
+				border-radius: inherit;
+				-webkit-backface-visibility: visible;
+				transition: opacity .2s ease;
+			}
+			&.active{
+				border: 1px solid var(--primary);
+				span{
+					opacity: 1;
+					background: var(--primary);
+				}
+			}
+		}
+	}
+}

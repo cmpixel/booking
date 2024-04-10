@@ -1,0 +1,60 @@
+.ova-our-team {
+    .image {
+        position: relative;
+        overflow: hidden;
+        img {
+            display: block;
+            width: 100%;
+        }
+        .social-icon {
+            margin: 0;
+            padding: 0;
+            position: absolute;
+            display: inline-flex;
+            list-style: none;
+            background: var(--primary);
+            padding: 10px 30px;
+            gap: 35px;
+            left: 50%;
+            bottom: 0;
+            transform: translate(-50%, 100%);
+            transition: all .3s linear;
+            .icon {
+                transition: all .3s linear;
+                &:hover {
+                    i {
+                        color: #1D1B1A;
+                    }
+                }
+                i {
+                    color: #fff;
+                    font-size: 14px;
+                    line-height: 1;
+                    display: inline-flex;
+                    transition: all .3s linear;
+                }
+            }
+        }
+    }
+    &:hover {
+        .image {
+            .social-icon {
+                bottom: 20px;
+                transform: translate(-50%, 0);
+            }
+        }
+    }
+    .info {
+        padding-top: 35px;
+        .name {
+            margin: 0;
+            font-family: var(--secondary-font);
+            font-size: 27px;
+        }
+        .job {
+            margin: 0;
+            margin-top: 5px;
+            font-size: 14px;
+        }
+    }
+}

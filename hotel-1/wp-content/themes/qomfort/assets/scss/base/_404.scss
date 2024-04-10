@@ -1,0 +1,33 @@
+.page_404{
+	margin: 60px 0;
+	text-align: center; 
+	.error-404 {
+		margin: 0; 
+		font-family: var(--primary-font);
+		font-size: 132px; 
+		color: var(--primary);
+		font-weight: bold;
+		letter-spacing: 0.05em;
+	}   
+	.message{
+		margin: 0 0 45px 0;
+		font-size: 60px;
+		line-height: 1.2;
+		font-weight: 600;
+		color: var(--heading); 
+	}
+	.btn-back-home {
+		a{
+			display: inline-block;
+			padding: 16px 38px;
+			background-color: var(--primary);
+			border-radius: 0;
+			font-weight: 600;
+			text-transform: uppercase;
+			color: #fff; 
+			&:hover, &:focus {
+				background-color: #000;
+			}
+		}
+	}
+}

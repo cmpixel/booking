@@ -1,0 +1,159 @@
+.road-map-slide {
+	position: relative;
+	padding: 0 95px;
+	@media screen and (max-width: 769px) {
+		padding: 0;
+	}
+	.road-map-wrapper {
+		position: relative;
+		.owl-stage-outer {
+			padding-top: 40px;
+		}
+	}
+	.road-map {
+		.img {
+			img {
+				display: block;
+				width: 191px;
+				height: 130px;
+				object-fit: cover;
+				object-position: center;
+			}
+		}
+		.date {
+			margin-top: 30px;
+			display: inline-flex;
+			align-items: center;
+			justify-content: center;
+			width: 95px;
+			height: 95px;
+			border-radius: 50%;
+			overflow: hidden;
+			.text {
+				display: inline-flex;
+				align-items: center;
+				justify-content: center;
+				margin: 0;
+				flex: 0 0 80px;
+				height: 80px;
+				overflow: hidden;
+				font-size: 20px;
+				font-weight: 700;
+				color: var(--heading);
+				background: #fff;
+				border-radius: 50%;
+			}
+			&.active {
+				background: #fff;
+				box-shadow: rgba(0, 0, 0, 0.25) 0px 4px 60px;
+				.text {
+					color: #fff;
+					background: var(--primary);
+				}
+			}
+		}
+		.box {
+			margin-top: 40px;
+			padding: 20px 30px 20px 35px;
+			background: #fff;
+			position: relative;
+			&:before {
+				position: absolute;
+				content: "";
+				top: -20px;
+				left: 20px;
+				width: 0;
+				height: 0;
+				border-bottom: 20px solid #fff;
+				border-right: 30px solid transparent;
+			}
+			.title {
+				margin: 0;
+				font-family: var(--secondary-font);
+				font-size: 22px;
+				.bold {
+					color: var(--primary);
+				}
+			}
+			.desc {
+				margin-top: 5px;
+				margin: 0;
+			}
+		}
+	}
+	.ova-nav {
+		position: absolute;
+		height: 1px;
+		width: 100%;
+		background: rgba(29, 27, 26, 0.10);
+		top: 50%;
+		left: 0;
+		transform: translateY(-50%);
+		@media screen and (max-width: 769px) {
+			display: none;
+		}
+		.owl-prev {
+			left: -120px;
+			@media screen and (max-width: 1379px) {
+				left: 0;
+			}
+		}
+		.owl-next {
+			right: -120px;
+			@media screen and (max-width: 1379px) {
+				right: 0;
+			}
+		}
+		.owl-prev, .owl-next {
+			position: absolute;
+			top: 50%;
+			transform: translateY(-50%);
+			display: inline-flex;
+			align-items: center;
+			justify-content: center;
+			background: #fff;
+			border: none;
+			width: 60px;
+			height: 60px;
+			border-radius: 50%;
+			overflow: hidden;
+			transition: all .3s linear;
+			&:hover {
+				background: var(--primary);
+				i {
+					color: #fff;
+				}
+			}
+			i {
+				color: var(--text);
+				display: inline-flex;
+				line-height: 1;
+				transition: all .3s linear;
+			}
+		}
+	}
+	.owl-dots{
+		text-align: center;
+		margin-top: 2px;
+		.owl-dot{
+			outline: none;
+			span{
+				width: 6px;
+				height: 6px;
+				margin: 5px;
+				background: #d1d1d6;
+				display: block;
+				-webkit-backface-visibility: visible;
+				transition: opacity .2s ease;
+				border-radius: 30px;
+			}
+			&.active{
+				span{
+					width: 12px;
+					border-radius: 5px;
+					opacity: 1;
+				}
+			}
+		}
+	}
+}

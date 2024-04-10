@@ -1,0 +1,21 @@
+// Transaction
+@mixin transaction( $propertty, $duration, $timing ){
+	transition: $propertty $duration $timing;
+    -moz-transition: $propertty $duration $timing;
+    -webkit-transition: $propertty $duration $timing;
+    -o-transition: $propertty $duration $timing;
+}
+
+//Tag - used for a tag
+@mixin tag(){
+	border-radius: 0;
+	padding: 8px 20px;
+	background-color: var(--primary);
+	color: #fff;
+	@include transaction( all, 0.3s, linear );
+
+	&:hover{
+		background: rgba(171, 96, 52, 0.20);
+		color: var(--primary);
+	}
+}

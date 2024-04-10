@@ -1,0 +1,48 @@
+
+---Downloaded files---
+The import files for: Demo Import were successfully downloaded!
+Initial max execution time = 30
+Files info:
+Site URL = http://localhost:8888/booking/hotel-1
+Data file = /Volumes/WORK/workspace/booking/hotel-1/wp-content/themes/qomfort/install-resource/demo-import/demo-content.xml
+Widget file = /Volumes/WORK/workspace/booking/hotel-1/wp-content/themes/qomfort/install-resource/demo-import/widgets.wie
+Customizer file = /Volumes/WORK/workspace/booking/hotel-1/wp-content/themes/qomfort/install-resource/demo-import/customize.dat
+Redux files:
+not defined!
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+---Importing widgets---
+Main Sidebar : 
+
+Pesquisar - Search - Imported
+Categorias - Categories - Imported
+Texto - Latest News - Imported
+Nuvem de tags - Popular Tags - Imported
+Texto - Gallery - Imported
+
+
+
+---Importing customizer settings---
+Customizer settings import finished!
+
+---ocdi/after_import---
+

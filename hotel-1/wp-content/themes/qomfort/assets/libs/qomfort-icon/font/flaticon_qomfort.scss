@@ -1,0 +1,125 @@
+$flaticon_qomfort-font: "flaticon_qomfort";
+
+@font-face {
+    font-family: $flaticon_qomfort-font;
+    src: url("./flaticon_qomfort.ttf?f27ca9c5c4a70c40b6e10f4963b93d7d") format("truetype"),
+url("./flaticon_qomfort.woff?f27ca9c5c4a70c40b6e10f4963b93d7d") format("woff"),
+url("./flaticon_qomfort.woff2?f27ca9c5c4a70c40b6e10f4963b93d7d") format("woff2"),
+url("./flaticon_qomfort.eot?f27ca9c5c4a70c40b6e10f4963b93d7d#iefix") format("embedded-opentype"),
+url("./flaticon_qomfort.svg?f27ca9c5c4a70c40b6e10f4963b93d7d#flaticon_qomfort") format("svg");
+}
+
+i[class^="qomfort-"]:before, i[class*=" qomfort-"]:before {
+    font-family: flaticon_qomfort !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+$flaticon_qomfort-map: (
+    "location": "\f101",
+    "check-mark": "\f102",
+    "stationary-bike": "\f103",
+    "jacuzzi": "\f104",
+    "swim": "\f105",
+    "relax": "\f106",
+    "restaurant": "\f107",
+    "transportation": "\f108",
+    "transportation-1": "\f109",
+    "spa": "\f10a",
+    "wifi-router": "\f10b",
+    "drink": "\f10c",
+    "bathtub": "\f10d",
+    "swimming-pool": "\f10e",
+    "mop": "\f10f",
+    "food-delivery": "\f110",
+    "treadmill": "\f111",
+    "facial": "\f112",
+    "mission": "\f113",
+    "hotel": "\f114",
+    "champagne": "\f115",
+    "laundry-machine": "\f116",
+    "location-1": "\f117",
+    "email-marketing": "\f118",
+    "call": "\f119",
+);
+
+.qomfort-location:before {
+    content: map-get($flaticon_qomfort-map, "location");
+}
+.qomfort-check-mark:before {
+    content: map-get($flaticon_qomfort-map, "check-mark");
+}
+.qomfort-stationary-bike:before {
+    content: map-get($flaticon_qomfort-map, "stationary-bike");
+}
+.qomfort-jacuzzi:before {
+    content: map-get($flaticon_qomfort-map, "jacuzzi");
+}
+.qomfort-swim:before {
+    content: map-get($flaticon_qomfort-map, "swim");
+}
+.qomfort-relax:before {
+    content: map-get($flaticon_qomfort-map, "relax");
+}
+.qomfort-restaurant:before {
+    content: map-get($flaticon_qomfort-map, "restaurant");
+}
+.qomfort-transportation:before {
+    content: map-get($flaticon_qomfort-map, "transportation");
+}
+.qomfort-transportation-1:before {
+    content: map-get($flaticon_qomfort-map, "transportation-1");
+}
+.qomfort-spa:before {
+    content: map-get($flaticon_qomfort-map, "spa");
+}
+.qomfort-wifi-router:before {
+    content: map-get($flaticon_qomfort-map, "wifi-router");
+}
+.qomfort-drink:before {
+    content: map-get($flaticon_qomfort-map, "drink");
+}
+.qomfort-bathtub:before {
+    content: map-get($flaticon_qomfort-map, "bathtub");
+}
+.qomfort-swimming-pool:before {
+    content: map-get($flaticon_qomfort-map, "swimming-pool");
+}
+.qomfort-mop:before {
+    content: map-get($flaticon_qomfort-map, "mop");
+}
+.qomfort-food-delivery:before {
+    content: map-get($flaticon_qomfort-map, "food-delivery");
+}
+.qomfort-treadmill:before {
+    content: map-get($flaticon_qomfort-map, "treadmill");
+}
+.qomfort-facial:before {
+    content: map-get($flaticon_qomfort-map, "facial");
+}
+.qomfort-mission:before {
+    content: map-get($flaticon_qomfort-map, "mission");
+}
+.qomfort-hotel:before {
+    content: map-get($flaticon_qomfort-map, "hotel");
+}
+.qomfort-champagne:before {
+    content: map-get($flaticon_qomfort-map, "champagne");
+}
+.qomfort-laundry-machine:before {
+    content: map-get($flaticon_qomfort-map, "laundry-machine");
+}
+.qomfort-location-1:before {
+    content: map-get($flaticon_qomfort-map, "location-1");
+}
+.qomfort-email-marketing:before {
+    content: map-get($flaticon_qomfort-map, "email-marketing");
+}
+.qomfort-call:before {
+    content: map-get($flaticon_qomfort-map, "call");
+}

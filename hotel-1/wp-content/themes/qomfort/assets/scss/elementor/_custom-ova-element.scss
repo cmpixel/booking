@@ -1,0 +1,48 @@
+.ova-hide-element-from-1024px-to-1600px {
+	@media ( min-width: 1024px ) and ( max-width: 1600px ) {
+		display: none  !important;
+	}
+}
+.ova-hide-element-from-1024px-to-1470px {
+	@media ( min-width: 1024px ) and ( max-width: 1470px ) {
+		display: none  !important;
+	}
+}
+.ova-hide-element-from-1024px-to-1400px {
+	@media ( min-width: 1024px ) and ( max-width: 1400px ) {
+		display: none  !important;
+	}
+}
+.ova-hide-element-from-1024px-to-1300px {
+	@media ( min-width: 1024px ) and ( max-width: 1300px ) {
+		display: none  !important;
+	}
+}
+.ova-hide-element-from-1024px-to-1200px {
+	@media ( min-width: 1024px ) and ( max-width: 1200px ) {
+		display: none  !important;
+	}
+}
+.ova-hide-element-from-1024px-to-1070px {
+	@media ( min-width: 1024px ) and ( max-width: 1070px ) {
+		display: none  !important;
+	}
+}
+
+// Gap
+.ova-element-column-gap-60px {
+	.elementor-widget-wrap {
+		column-gap: 60px;
+	}
+	
+}
+.ova-element-column-gap-40px {
+	.elementor-widget-wrap {
+		column-gap: 40px;
+	}
+}
+.ova-element-column-gap-30px {
+	.elementor-widget-wrap {
+		column-gap: 30px;
+	}
+}

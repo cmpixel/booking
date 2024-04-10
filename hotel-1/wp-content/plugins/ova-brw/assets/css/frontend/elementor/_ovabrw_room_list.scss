@@ -1,0 +1,70 @@
+.ovabrw-room-list {
+	.list {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		li:not(:first-child) {
+			padding-top: 45px;
+		}
+		.item {
+			&:hover {
+				border-color: var(--primary-hover);
+				.content {
+					.title {
+						a {
+							text-decoration: underline;
+							color: var(--primary);
+						}
+					}
+				}
+				.icon {
+					background: var(--primary);
+					color: #fff;
+					border-color: var(--primary);
+				}
+			}
+			padding-bottom: 30px;
+			transition: all .3s linear;
+			display: flex;
+			align-items: center;
+			flex-wrap: wrap;
+			row-gap: 20px;
+			justify-content: space-between;
+			border-bottom: 1px solid rgba(29, 27, 26, 0.10);
+			.content {
+				.title {
+					margin: 0;
+					a {
+						color: var(--heading);
+						font-size: 35px;
+						font-weight: 600;
+						transition: all .3s linear;
+					}
+				}
+				.price {
+					margin-top: 5px;
+					transition: all .3s linear;
+					.number {
+						color: var(--primary);
+						transition: all .3s linear;
+					}
+				}
+			}
+			.icon {
+				flex: 0 0 60px;
+				height: 60px;
+				border-radius: 50%;
+				border: 1px solid rgba(29, 27, 26, 0.10);
+				color: var(--heading);
+				transition: all .3s linear;
+				display: inline-flex;
+				align-items: center;
+				justify-content: center;
+				i {
+					display: inline-flex;
+					line-height: 1;
+				}
+			}
+		}
+	}
+}

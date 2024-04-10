@@ -1,0 +1,1500 @@
+/* Single Features */
+ul.ovabrw_woo_features{
+	display: flex;
+	column-gap: 20px;
+	row-gap: 8px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+	list-style: none;
+	margin: 0 0 30px 0;
+	padding: 0;
+	li{
+		display: inline-flex;
+		align-items: center;
+		gap: 7px;
+		i {
+			display: inline-flex;
+			color: var(--primary);
+		}
+		label{
+			display: inline-block;
+			min-width: 200px;
+		}
+		span {
+			font-weight: 400;
+		}
+	}
+}
+/* /Single Features */
+
+ul.ovabrw_cus_taxonomy{
+	list-style: none;
+	margin: 15px 0px;
+	padding: 0;
+	border-bottom: 1px solid #f1f1f1;
+	padding-bottom: 15px;
+	li {
+		margin: 0;
+		label {
+			font-weight: 600;
+			min-width: 200px;
+			display: inline-block;
+		}
+		span {
+			font-weight: 400;
+		}
+	}
+}
+
+/* Single Elementor Meta */
+.ovabrw-product-meta {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	display: flex;
+	flex-wrap: wrap;
+	column-gap: 30px;
+	li.item-meta {
+		display: inline-flex;
+		align-items: center;
+		gap: 6px;
+	}
+	i {
+		color: var(--primary);
+	}
+}
+
+/* Single Elementor Rating */
+.ova-product-rating {
+	display: flex;
+	align-items: center;
+	gap: 5px;
+    .star-rating {
+    	margin: 0;
+		display: inline-block;
+	    color: #AB6034;
+	    vertical-align: middle;
+	    float: none !important;
+	    &:before {
+	    	color: #AB6034;
+	    }
+    }
+}
+.woocommerce {
+	.ova-product-rating {
+	    .star-rating {
+		    &:before {
+		    	color: #AB6034;
+		    }
+	    }
+	}
+}
+
+/* Single Elementor Rules */
+.ovabrw-product-rules {
+	ul {
+		padding-inline-start: 20px;
+		li {
+			margin-bottom: 6px; 
+			&::marker {
+				color: var(--primary);
+			}
+		}
+	}
+}
+
+/* Single Elementor Review */
+.ovabrw-product-review {
+	h4.not-visible {
+		font-size: 27px;
+	}
+	#comments {
+		.woocommerce-Reviews-title {
+			margin: 15px 0;
+			font-size: 42px;
+			span {
+				font-style: italic;
+				display: none;
+			}
+		}
+		ol.commentlist {
+			padding: 0;
+			li {
+				.comment-text {
+					p.meta {
+						font-size: 1em!important;
+						text-transform: capitalize;
+						.woocommerce-review__author {
+							color: #0A0807;
+						}
+					}
+				}
+			}
+		}
+	}
+	#review_form_wrapper{
+		#review_form{
+			#respond{
+				.comment-reply-title{
+					display: inline-block;
+					margin-bottom: 20px;
+				    color: var(--heading);
+				    text-transform: none;
+				}
+				
+				.comment-form{
+					margin: 0;
+                    p{
+						margin: 0 0 25px 0;
+						padding: 0;
+					}
+					.comment-form-author {
+						margin-right: 10px;
+						flex: calc(50% - 20px);
+						max-width: 50%;
+					}
+					.comment-form-email {
+						margin-left: 10px;
+						flex: calc(50% - 20px);
+						max-width: 50%;
+					}
+					.comment-form-rating{
+						width: 100%;
+						margin-bottom: 10px;
+					}	
+					.comment-notes{
+						display: none;
+						.required{
+							color: var(--primary);
+						}
+					}
+					.form-submit {
+						margin-bottom: 0;
+					}
+					label{
+						font-size: 15px;
+						text-transform: capitalize;
+						.required{
+							color: var(--primary);
+						}
+					}
+					textarea{
+						margin: 0;
+						border: 1px solid rgba(14, 19, 23, 0.1);
+						background-color: var(--background-color);
+						border-radius: 0;
+						height: 150px;	
+						padding: 11px 15px;
+					}
+
+					.comment-form-rating{
+						label{
+						    width: 100%;
+						}
+						.stars{
+							margin: 0;
+							display: inline-flex;
+							align-items: center;
+							color: var(--primary);
+							a {
+								color: inherit;
+							}
+						}
+						.select2-container--default {
+							display: none;
+						}
+					}
+					.comment-form-comment{
+						margin-top: 0px;
+						
+					}
+					.form-submit{	
+						input{
+							color: #fff;
+							padding: 18px 40px;
+							border-radius: 0;
+							background-color: var(--primary);
+							&:hover{
+								background: var(--heading);
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+/* Single Elementor Related Product */
+.ovabrw-product-ralated {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-gap: 30px;
+	grid-row-gap: 60px;
+
+	@media screen and (max-width: 1200px) {
+		grid-template-columns: 1fr 1fr;
+	}
+
+	@media screen and (max-width: 767px) {
+		grid-template-columns: 1fr;
+	}
+}
+
+/* Loop Features */
+.ovabrw-features {
+	display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 15px 0 15px 0;
+    padding: 0 8px;
+	.feature-item {
+		width: 50%;
+		display: flex;
+		padding-bottom: 8px;
+	    color: #343434;
+	    opacity: .8;
+	    font-weight: 500;
+	    
+		i {
+			font-size: 18px;
+		    margin-right: 8px;
+		    font-weight: 500;
+		    opacity: .6;
+		    color: #000;
+		}
+		
+	}
+}
+
+/*Loop Custom taxonomy*/
+.product_listing_custom_tax{
+	list-style: none;
+	margin: 10px 0px;
+	padding: 0;
+	li{
+		display: inline-block;
+		margin: 0 10px;
+	}
+}
+
+
+/* Single Attribute */
+.ovabrw_product_attr {
+	margin: 0 0 15px 0;
+}
+
+
+/* Single Table Price */
+.product_table_price{
+	margin-bottom: 30px;
+	@media(max-width: 992.98px){
+		margin-bottom: 30px;
+	}
+	.ovacrs_price_rent{
+		width: 100%;
+		display: block;
+		margin-bottom: 30px;
+		clear: both;
+		.ovabrw-according{
+			position: relative;
+			cursor: pointer;
+			margin: 0 0 15px 0;
+			padding: 5px 0;
+			&:before{
+				position: absolute;
+				right: 0;
+				content: "\33";
+				font-family: "ElegantIcons";
+			}
+			&:after{
+				position: absolute;
+				left: 0;
+				bottom: 0;
+				content: "";
+				width: 100%;
+				height: 1px;
+				background-color: #ddd;
+			}
+			&.collapsed{
+				color: #343434;	
+				&:before{
+					color: #343434;	
+				}
+			}
+
+			&:hover{
+				color: #25282e;
+				text-decoration: none;
+				&:before{
+					color: #25282e;
+				}
+			}
+
+		}
+
+		.ovabrw_collapse_content{
+			display: none;
+			&.show {
+				display: block;
+			}
+			.price{
+				margin-bottom: 20px;
+				label{
+					font-weight: 600;
+					font-size: 14px;
+					padding-right: 15px;
+				}
+				.amount{
+					font-size: 24px;
+					font-weight: 400;
+				}
+			}
+			.price_table{
+				label{
+					display: inline-block;
+					margin-bottom: 5px;
+					color: #0A0807;
+					font-weight: 500;
+					.woocommerce-Price-amount{
+						color: #25282e;
+					}
+				}
+				table:not( .has-background ) th {
+					background: transparent;
+				}
+				table{
+					border: none;
+					tr,td,th{
+						border: none;	
+					}
+
+					thead{
+						background-color: #0A0807;
+						th{
+							color: #fff;
+						}
+					}
+					tr{
+						&.odd{
+							background-color: #f3f3f3;
+						}
+						&.eve{
+							background-color: #fff;	
+						}
+						td{
+							font-size: 14px;
+							line-height: 1.6;
+						}
+					}
+				}
+			}
+		}
+
+		.ovacrs_rt_discount{
+			.time_discount{
+				margin-bottom: 15px;
+			}
+
+		}
+
+		 @media( max-width: 767.98px){
+		 	.ovabrw_collapse_content .price_table{
+		 		label{}
+		 		table{
+		 			thead{
+		 				display: none;
+		 			}
+		 			tr td{
+		 				display: block;
+		 				text-align: right;
+		 				padding: 5px 0px!important;
+
+		 				&.bold{
+		 					font-weight: 500!important;
+		 					display: none;
+		 				}
+		 				&:before{
+		 					content: attr(data-title) ": ";
+		 					font-weight: 600;
+		 					float: left;
+		 				}
+		 			}
+		 		}
+
+		 	}
+		 	.ovacrs_rt_discount{
+		 		.time_discount{
+		 			text-align: left;	
+		 		}
+		 		.close_discount{
+		 			text-align: left;
+		 		}
+		 	}
+
+		}
+
+
+	}
+}
+
+body.rtl {
+	.product_table_price {
+		.ovacrs_price_rent {
+			.ovabrw-according {
+				&:before {
+					left: 0;
+					right: unset;
+				}
+			}
+		}
+	}
+}
+
+
+/* Single Unavaiable time */
+.ovacrs_single_untime{
+	h3 {
+		margin: 0 0 10px 0;
+	}
+	ul{
+		list-style: none;
+		margin: 0;
+		padding: 0;
+	}
+}
+
+
+/* Single Discount Popup */
+.ovacrs_rt_discount{
+	z-index: 11;
+	&.popup {
+		width:100%;
+		height:100%;
+		display:none;
+		position:fixed;
+		top:0px;
+		left:0px;
+		background:rgba(0,0,0,0.75);
+		z-index: 9999;
+	}
+
+	/* Inner */
+	.popup-inner {
+		max-width:700px;
+		width:90%;
+		padding:40px;
+		position:absolute;
+		top:50%;
+		left:50%;
+		-webkit-transform:translate(-50%, -50%);
+		transform:translate(-50%, -50%);
+		box-shadow:0px 2px 6px rgba(0,0,0,1);
+		border-radius:3px;
+		background:#fff;
+	}
+
+
+	/* Close Button */
+	.popup-close {
+		width:30px;
+		height:30px;
+		padding-top:4px;
+		display:inline-block;
+		position:absolute;
+		top:0px;
+		right:0px;
+		transition:ease 0.25s all;
+		-webkit-transform:translate(50%, -50%);
+		transform:translate(50%, -50%);
+		border-radius:1000px;
+		background:rgba(0,0,0,0.8);
+		font-size:20px;
+		text-align:center;
+		line-height:100%;
+		color:#fff;
+	}
+	.popup-close:hover {
+		-webkit-transform:translate(50%, -50%) rotate(180deg);
+		transform:translate(50%, -50%) rotate(180deg);
+		background:rgba(0,0,0,1);
+		text-decoration:none;
+	}
+}	
+
+
+/* Single Calendar */
+.wrap_calendar{
+    padding: 30px 20px;
+    margin: 0 0 20px 0;
+    position: relative;
+    background-color: #fff; 
+    box-shadow: 0px 4px 60px 0px rgba(0, 0, 0, 0.07);
+    width: 100%;
+    clear: both;
+    @media( max-width: 767px ){
+    	padding: 20px 5px;
+    }
+}
+
+ul.intruction_calendar{
+	position: relative;
+	list-style: none;
+	margin: 0 0 40px 0;
+	padding: 0;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	column-gap: 25px;
+	row-gap: 6px;
+	max-width: 330px;
+
+	li{
+		display: inline-flex;
+		align-items: center;
+		gap: 6px;
+		.pink{
+			width: 15px; height: 15px; background-color: #AB6034; border: 1px solid #AB6034; display: inline-block;
+		}
+		.white{
+			width: 15px; height: 15px; background-color: #fff; border: 1px solid #555; display: none;
+		}
+		.maybe{
+			width: 15px; 
+			height: 15px; 
+			background-color: #fff; 
+			border: 1px solid #555; 
+			display: inline-block; 
+			opacity: 0.5;
+			position: relative;
+		}
+		.yellow{
+			width: 15px; height: 15px; 
+			background-color: #EECB87; 
+			border: 1px solid rgba(85,85,85,0.5); 
+			display: inline-block; 
+		}
+	}
+}
+
+.ovabrw__product_calendar{
+
+	.fc-scrollgrid-sync-table {
+		margin: 0;
+	}
+
+	/*Toolbar: Button next, prev, today, month, week, day, lint, Title; */
+	.fc-header-toolbar{
+
+		.fc-toolbar-title {
+			margin: 0 0 10px 0;
+			font-family: 'Roboto';
+			font-size: 16px;
+		}
+
+		.fc-right{
+			float: left;
+			clear: both;
+			h2{
+				margin-top: 10px;
+				margin-bottom: 10px;
+			}
+		}
+
+		.fc-button-group{
+			display: inline-block;
+			.fc-dayGridMonth-button, .fc-timeGridWeek-button, .fc-timeGridDay-button, .fc-listWeek-button {
+				display: none;
+			}
+			.fc-button{
+				border-radius: 0;
+			}
+		}
+
+		.fc-button{
+			margin: 0 10px 10px 0;
+			height: 2.5em;
+			background-color: #fff;
+			font-size: 14px;
+			color: #696969;
+			background-image: none;
+			text-transform: capitalize;
+			border-color: #cdcdcd;
+			&:disabled {
+				opacity: 1;
+			}
+
+			&:focus{
+				outline: none!important;
+				box-shadow: none;
+				background-image: none!important;
+			}
+			&.fc-button-active {
+				background-color: var(--primary)!important; 
+				border-color: var(--primary)!important;
+				box-shadow: none!important;
+			}
+			.fc-icon-left-single-arrow:after{
+				content: "\34";
+				font-family: "ElegantIcons";
+				font-size: 20px;
+			}
+			.fc-icon-right-single-arrow:after{
+				content: "\35";
+				font-family: "ElegantIcons";
+				font-size: 20px;
+			}
+			&.fc-today-button{
+				text-transform: capitalize;
+			}
+			&.fc-state-active{
+				color: #343434;
+				opacity: 1;
+				background-image: none!important;
+				box-shadow: none;
+			}
+			.fc-icon {
+				font-size: 1.2em;
+			}
+
+		}
+
+		@media( max-width: 767.98px){
+			.fc-button-group{
+				margin-left: 0;
+				display: inline-block;
+			}
+			.fc-right{
+				margin-top: 0;
+			}
+		}
+	}
+
+	.fc-col-header {
+		margin-bottom: 0;
+	}
+
+	.fc-col-header-cell-cushion{
+		color: #0A0807;
+		font-weight: 500;
+	}
+	
+	.fc-day{
+		text-align: center;
+	}
+
+	.fc-daygrid-event {
+		white-space: break-spaces;
+	}
+
+	.fc-daygrid-event-dot{
+		display: none;
+	}
+
+	.fc-event-time {
+		display: none;
+	}
+
+	.fc-day-today {
+		.fc-daygrid-day-top, 
+		.fc-daygrid-day-top .fc-daygrid-day-number, .woocommerce-Price-amount {
+			color: #fff;
+		}
+	}
+
+	.fc-daygrid-day {
+		.unavailable_date {
+			.fc-daygrid-day-top, 
+			.fc-daygrid-day-top .fc-daygrid-day-number, .woocommerce-Price-amount {
+				color: #fff;
+			}
+		}
+	}
+
+	.fc-day-future, .fc-day-today {
+		cursor: pointer;
+		&.fc-day-other {
+			cursor: not-allowed;
+		}
+	}
+
+	.fc-day-past {
+		cursor: not-allowed;
+	}
+
+	.fc-daygrid-day-top,
+	.fc-daygrid-day-top .fc-daygrid-day-number{
+		color: #696969;
+		padding: 5px;
+	}
+
+	&.fc {
+		.fc-daygrid-day.fc-day-today {
+			background-color: var(--primary);
+		}
+		.fc-scrollgrid {
+			margin: 0;
+		}
+		.fc-daygrid-body-unbalanced .fc-daygrid-day-events {
+			min-height: auto;
+			margin: 5px 0;
+			display: none;
+		}
+	}
+
+	.fc-daygrid-day-number{
+		width: 100%;
+		text-align: center;
+	}
+
+	.fc-daygrid-day-bg{
+		padding: 5px;
+		.woocommerce-Price-amount{
+			z-index: 9999;
+    		position: relative;
+		}
+	}
+	
+	.fc-daygrid-day-frame:has(.fc-daygrid-day-bg):has(.fc-daygrid-bg-harness) {
+		.fc-daygrid-day-top .fc-daygrid-day-number, .fc-daygrid-day-bg {
+			color: #FFF;
+		}
+	}
+
+	.fc-daygrid-bg-harness {
+		z-index: -1;
+	}
+
+	.fc-day-other .fc-daygrid-day-bg{
+		.woocommerce-Price-amount{
+			opacity: 0.3;
+		}
+	}
+
+	.fc-day-past {
+		.fc-daygrid-day-top {
+			opacity: 0.3;
+		}
+		.fc-daygrid-day-bg{
+			.woocommerce-Price-amount{
+				opacity: 0.3;
+			}
+		}
+	}
+
+	.fc-bg-event{
+		opacity: 1;
+	}
+		
+	/*hide booked time	*/
+	&.ova-hide-time-calendar .fc-daygrid-day-events{
+		opacity: 0;
+		height: 0;
+	}
+
+	&.fc-theme-standard .fc-popover{
+		background: #fff;
+    	z-index: 9999!important;
+	}
+
+	@media( max-width: 991.98px){
+		width: 100%;
+	}
+
+}
+
+/* Form Booking Tab */
+.ovabrw-forms-booking-tab {
+	.ovabrw_request_booking {
+		display: none;
+		margin-bottom: 40px;
+		padding: 30px 25px 40px 25px;
+		background-color: #F4F2F1;
+	}
+	&.ovabrw-not-tabs{
+		.ovabrw_request_booking {
+			display: block;
+		}
+		ul.tabs {
+			li.item{
+				color: var(--primary);
+				border-bottom: 4px solid var(--primary);
+			}
+		}
+	}
+	ul.tabs {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		display: flex;
+		justify-content: space-between;
+		box-shadow: 0 4px 40px rgba(0,0,0,0.07);
+
+		li.item {
+			font-size: 18px;
+			font-weight: 700;
+			color: var(--heading);
+			width: 100%;
+			text-align: center;
+			padding: 30px 5px 20px 5px;
+			display: block;
+			cursor: pointer;
+			border-bottom: 1px solid #cacaca;
+
+			&.active {
+				color: var(--primary);
+				border-bottom: 2px solid var(--primary);
+			}
+		}
+	}
+}
+
+/* Single Booking Form */
+.ovabrw_booking_form{
+	margin-bottom: 40px; 
+	padding: 30px 25px 40px 25px;
+	background-color: #F4F2F1;
+
+	.wrap_fields{
+		margin-bottom: 5px;
+		.rb_field{
+			margin-bottom: 30px;
+			label.error{
+				color: red;
+				margin-top: 5px;
+			}
+		}
+		label{
+			display: block;
+			margin-bottom: 10px;
+			color: #0A0807;
+			font-weight: 500;
+		}
+		select, input{
+			box-shadow: none;
+			border: 1px solid #dbdbdb !important;
+			width: 100%;
+			padding-left: 10px;
+			outline: none;
+			&:focus{
+				outline: none;
+				box-shadow: none;
+			}
+
+		}
+	}
+	
+	button.submit{
+		margin-top: 20px;
+		text-align: center;
+		text-transform: uppercase;
+		padding: 16px 32px;
+		width: 100%;
+		border: none;
+		color: #fff;
+		&:focus{
+			outline: none;
+		}
+		&:hover{
+			background-color: #25282e;
+			cursor: pointer;
+		}
+	}
+}
+
+/* Booking Form - Service  */
+.ovabrw_extra_service {
+	clear: both;
+	width: 100%;
+	margin-top: 10px;
+	max-width: 520px;
+	.ovabrw_resource{
+		margin-bottom: 20px;
+		.item{
+			display: flex;
+			gap: 15px;
+			margin-bottom: 10px;
+			.left{
+				display: inline-flex;
+				align-items: center;
+				gap: 6px;
+				width: 60%;
+				label{
+					margin-bottom: 0;
+					font-weight: 400;
+					color: var(--text);
+				}
+				input{
+					border-radius: 0;
+					background-color: #f8f8f8;
+					border: 1px solid #b3b3b3;
+					width: 15px;
+					height: 15px;
+				}
+			}
+			.right{
+				width: 40%;
+			}
+		}
+	}
+}
+
+/* Single Request Booking */
+.ovabrw_request_booking{
+	h4.title{
+ 		font-weight: 400;
+ 		opacity: 0.8;
+ 		text-align: center;
+ 		margin-bottom: 50px;
+ 	}
+ 	.ovabrw_service_wrap{
+		width: 100%;
+		label{
+			display: inline-block;
+			font-weight: 500;
+			color: var(--heading);
+		    margin-bottom: 10px;
+		}
+		.ovabrw_service{
+			display: flex;
+			flex-wrap: wrap;
+			width: 100%;
+			margin: 0 -5px;
+			.ovabrw_service_select{
+				padding: 0 5px;
+				margin-bottom: 10px;
+				flex: 0 0 50%;
+				@media (max-width: 767px) {
+					flex: 0 0 100%;
+				}
+				select{
+				    width: 100%;
+				    padding-left: 10px;
+				    outline: none;
+				}
+			}
+		}
+	}
+ 	.rental_item{
+ 		.rb_field{
+ 			margin-bottom: 30px;
+ 			label.error{
+ 				color: red;
+ 				margin-top: 5px;
+ 			}
+ 		}
+ 		label{
+ 			display: block;
+ 			color: var(--heading);
+ 			font-weight: 500;
+ 			margin-bottom: 5px;
+ 		}
+ 		select, input{
+ 			box-shadow: none;
+ 			border: 1px solid #dbdbdb !important;
+ 			background-color: #fff;
+ 			width: 100%;
+ 			padding-left: 10px;
+
+ 			&:focus{
+ 				outline: none;
+ 				box-shadow: none;
+ 			}
+ 		}
+ 	}
+
+ 	.ovabrw_extra_service{
+ 		> label{
+ 			display: block;
+ 			color: var(--heading);
+ 			font-weight: 500;
+ 			margin-bottom: 10px;
+ 		}
+ 		.ovabrw_resource{
+ 			.item{
+ 				display: flex;
+ 				column-gap: 20px;
+ 				margin-bottom: 10px;
+ 				.left{
+ 					width: 60%;
+ 					input{
+ 						border-radius: 0;
+ 						background-color: #f8f8f8;
+ 						border: 1px solid #b3b3b3;
+ 						width: 15px;
+ 						height: 15px;
+ 					}
+ 				}
+ 				.right{
+ 					width: 40%;
+ 				}
+ 			}
+ 		}
+ 	}
+
+ 	.extra{
+ 		margin-top: 15px;
+ 		textarea{
+ 			border: 1px solid #dbdbdb;
+ 			background-color: #fff;
+ 			padding-left: 15px;
+ 			padding-top: 5px;
+ 			box-shadow: none;
+ 			resize: none;
+ 			&:focus{
+ 				outline: none;
+ 			}
+ 		}
+ 	}
+ 	button.submit{
+ 		text-transform: uppercase;
+ 		color: #fff;
+ 		padding: 16px 80px;
+ 		border: none;
+ 		margin-top: 30px;
+ 		&:focus{
+ 			outline: none;
+ 		}
+ 		&:hover{
+ 			background-color: #25282e;
+ 			cursor: pointer;
+ 		}
+ 	}
+
+ 	@media( max-width: 767.98px){
+	 	.extra textarea{
+	 		width: 100%;
+	 	}
+	}
+
+}
+
+/* Search Shortcode */
+.ovabrw_wd_search{	
+ 	form{
+
+ 		.wrap_content{
+ 			display: inline-block;
+ 			width: 100%;
+ 			.s_field{
+ 				display: inline-block;
+ 				&.five-column {
+ 					width: 20%;
+	 				@media( max-width: 991px ){
+	 					width: 25%;
+	 				}
+	 				@media( max-width: 767px ){
+	 					width: 50%;
+	 				}
+ 				}
+ 				&.four-column {
+ 					width: 25%;
+	 				@media( max-width: 991px ){
+	 					width: 25%;
+	 				}
+	 				@media( max-width: 767px ){
+	 					width: 50%;
+	 				}
+ 				}
+ 				&.three-column {
+ 					width: 33.33%;
+	 				@media( max-width: 991px ){
+	 					width: 33.33%;
+	 				}
+	 				@media( max-width: 767px ){
+	 					width: 50%;
+	 				}
+ 				}
+ 				&.two-column {
+ 					width: 50%;
+	 				@media( max-width: 991px ){
+	 					width: 50%;
+	 				}
+	 				@media( max-width: 767px ){
+	 					width: 100%;
+	 				}
+ 				}
+
+ 				&.one-column {
+ 					width: 100%;
+	 				@media( max-width: 991px ){
+	 					width: 100%;
+	 				}
+	 				@media( max-width: 767px ){
+	 					width: 100%;
+	 				}
+ 				}
+
+ 				&.ovabrw-value-attribute {
+ 					display: none ;
+ 					&.active {
+ 						display: inline-block;
+ 					}
+ 				}
+ 				.content{
+ 					margin: 0 5px 15px 5px;	
+
+ 					.select2-container.select2-container--default{
+ 						height: 39px;
+ 						line-height: 40px;
+ 						&:focus{
+ 							outline: none;
+ 						}
+ 						.selection{
+ 							&:focus{
+ 								outline: none;
+ 							}		
+ 						}
+ 					}
+ 				}
+ 			}
+ 			label{
+ 				display: block;
+ 				font-weight: 600;
+ 			}	
+ 			input, select{
+ 				border-radius: 4px;
+ 				border: 1px solid #dbdbdb;
+ 				height: 40px;
+ 				padding-left: 10px;
+ 				padding-right: 10px;
+ 				width: 100%;
+ 				background-color: #fff;
+ 				color: #343434;
+ 				&::-webkit-input-placeholder {
+ 					color: #343434;
+
+ 				}
+ 				&::-moz-placeholder {
+ 					color: #343434;
+
+ 				}
+ 				&:-ms-input-placeholder {
+ 					color: #343434;
+
+ 				}
+ 				&:-moz-placeholder {
+ 					color: #343434;
+
+ 				}
+
+ 				&:focus{
+ 					outline: none;
+ 				}
+ 			}
+
+
+ 		}
+ 		.s_submit{
+ 			clear: both;
+ 			margin-top: 20px;
+ 			text-align: center;
+ 			width: 100%;
+ 			button.submit{
+ 				padding: 15px 50px;
+ 				background-color: #333333;
+ 				border: 1px solid  #333333;
+ 				border-radius: 4px;
+ 				color: #fff;
+ 				text-transform: uppercase;
+ 				font-weight: 500;
+
+ 				&:hover{
+ 					background-color: #25282e;
+ 					border-color: #25282e;
+ 				}
+ 			}
+ 			.wrap_btn{
+ 				padding-left: 30px;
+ 				padding-right: 30px;
+ 				background-color: #fff;
+ 				position: relative;
+ 				
+ 				.wrap_btn_2{
+ 					position: relative;
+ 					background-color: #fff;
+ 					padding: 0px 30px;
+ 					z-index: 2;
+
+ 				}
+
+ 			}
+ 		}
+ 	}
+
+ 	.error{
+ 		color: red;
+ 		margin: 0;
+ 	}
+
+ 	@media( max-width: 991.98px ){
+	 	form .s_submit .wrap_btn:after{
+	 		left: 0;
+	 		right: 0;
+	 	}
+	}
+
+}
+
+/* Single  Deposit */
+.ovabrw-deposit {
+	margin-top: 15px;
+	margin-bottom: 10px;
+	clear: both;
+	width: 100%;
+	display: block;
+	.title-deposite {
+		font-size: 16px;
+		margin-bottom: 8px;
+	}
+	.ovabrw-type-deposit {
+		display: flex;
+	}
+	input[type="radio"] {
+		display: none;
+		&:checked + label {
+			background-color: var(--primary);
+			opacity: 1;
+			color: #fff;
+		}
+	}
+	label {
+		display: inline-block;
+		background-color: #E1E1E1;
+		opacity: 0.8;
+		padding: 9px 18px;
+		font-size: 14px;
+		width: 100%;
+		line-height: 1.3;
+		text-align: center; 
+		margin: 0 !important;
+	}
+
+	.ovabrw-pay-deposit,
+	.ovabrw-pay-full{
+		cursor: pointer;
+	}
+}
+
+
+/* Other */
+.ovabrw-container{
+	.ovabrw-row {
+		.ovabrw_wd_search {
+			padding: 0 15px;
+		}
+		.wrap-item {
+			display: flex;
+			flex-wrap: wrap;
+			gap: 5px;
+			width: 100%;
+			
+			.rental_item  {
+				.error_item {
+					display: none;
+					label {
+						color: #f00;
+					}
+				}
+
+				.ovabrw-radio, .ovabrw-checkbox {
+					display: inline-flex;
+					align-items: center;
+
+					input {
+						width: auto;
+						height: auto;
+						cursor: pointer;
+					}
+					label {
+						display: inline-block;
+						margin: 0;
+						padding: 0 5px;
+						cursor: pointer;
+					}
+				}
+
+				.ovabrw-file {
+					position: relative;
+
+					label {
+						margin: 0;
+						.ovabrw-file-chosen {
+							display: inline-block;
+							border: 1px solid #dbdbdb;
+						    padding: 5px 10px;
+						}
+
+						.ovabrw-file-name {
+							color: #F00;
+							font-size: 16px;
+							font-weight: 400;
+							font-style: italic;
+						}
+					}
+
+					input[type="file"] {
+						visibility: hidden;
+						position: absolute;
+						z-index: 0;
+					}
+				}
+			}
+			.ovabrw_service_wrap{
+				width: 100%;
+				.ovabrw_service{
+					display: flex;
+					justify-content: space-between;
+					flex-wrap: wrap;
+					gap: 5px;
+					width: 100%;
+					.ovabrw_service_select{
+						margin-bottom: 10px;
+					}
+				}
+			}
+			&.two_column {
+				.rental_item {
+					width: calc(50% - 5px);
+					@media (max-width: 767px) {
+						width: 100%;
+					}
+				}
+				.ovabrw_service{
+					.ovabrw_service_select{
+						width: calc(50% - 5px);
+						@media (max-width: 767px) {
+							width: 100%;
+						}
+					}
+				}
+			}
+		}
+		.ovabrw-order-result {
+			padding: 0 15px;
+			&:after {
+				content: "";
+				clear: both;
+				display: block;
+			}
+		}
+	}
+	
+}
+
+.ui-autocomplete {
+	padding: 0px;
+	margin: 0px;
+	list-style-type: none;
+	width: 300px;
+	background: #fff;
+	z-index: 9;
+	padding: 10px;
+	border: 1px solid #e3e3e3;
+	font-size: 14px;
+	line-height: 1.2;
+	.ui-menu-item {
+		cursor: pointer;
+		padding: 10px 5px;
+		&:not(:last-child) {
+			border-bottom: 1px solid #e3e3e3;
+		}
+		&:hover {
+			background: #333333;
+			color: #fff;
+		}
+	}
+}
+
+.rental_item{
+	margin-bottom: 15px;
+}
+
+.ovabrw_woo_price{
+	margin: 2px 0 2px 0;
+	display: block;
+	&:last-child {
+		margin-bottom: 12px;
+	}
+}
+
+
+/* Ajax Total */
+.ajax_show_total{
+	position: relative;
+	.show_ajax_content {
+		opacity: 0;
+		&.active{
+			opacity: 1;
+			transition-duration: 0.3s;
+			font-size: 1.1em;
+			color: #AB6034;
+			.show_total, .show_availables_vehicle {
+				font-size: 1.3em;
+			}
+		}
+	}
+
+	.ajax-show-error{
+		display: none;
+		font-size: 16px;
+		color: red;
+		font-style: 1.2em;
+	}
+}
+
+.ajax_loading {
+	opacity: 0;	
+	display: inline-block;
+	width: 48px;
+	height: 48px;
+	position: absolute;
+	right: 0;
+	top: 0;
+		&.active{
+			opacity: 1;
+		}
+	}
+.ajax_loading:after {
+  	content: " ";
+  	display: block;
+  	width: 48px;
+  	height: 48px;
+ 	margin: 0;
+  	border-radius: 50%;
+  	border: 5px solid #AB6034;
+  	border-color: #AB6034 transparent #AB6034 transparent;
+  	animation: ajax_loading 1.2s linear infinite;
+  	background-color: #ffffffa3;
+}
+
+@keyframes ajax_loading {
+  	0% {
+    	transform: rotate(0deg);
+  	}
+  	100% {
+   	 	transform: rotate(360deg);
+ 	}
+}
+
+.ovabrw-price +.price{
+	display: none;
+}
+
+// CSS extra item
+.ovabrw_extra_item {
+	text-align: left;
+	display: block;
+	dt {
+		display: block;
+	}
+	dd {
+		display: block;
+	}
+}
+
+// CSS tax in cart deposit
+.ova_tax_label {
+	display: block;
+	font-weight: 400;
+}

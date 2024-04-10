@@ -1,0 +1,127 @@
+.ova-testimonial-2{
+	.wrapper {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 40px;
+		align-items: center;
+		@media screen and (max-width: 767px) {
+			grid-template-columns: 1fr;
+			gap: 30px;
+		}
+		.client_info {
+			.info {
+				display: flex;
+				align-items: center;
+				gap: 30px;
+				.client {
+					flex: 0 0 70px;
+					img {
+						display: block;
+						width: 70px;
+						height: 70px;
+						border-radius: 50%;
+						overflow: hidden;
+						object-fit: cover;
+						object-position: center;
+					}
+				}
+				.name-job {
+					.name {
+						margin: 0;
+						font-family: var(--secondary-font);
+						font-size: 24px;
+						font-weight: 700;
+						line-height: 1;
+						color: var(--heading);
+					}
+					.job {
+						margin: 0;
+						margin-top: 5px;
+					}
+				}
+			}
+			.testimonial {
+				margin: 0;
+				margin-top: 36px;
+				.icon {
+					vertical-align: top;
+					&.icon-rotate {
+						i {
+							transform: rotate(-180deg);
+						}	
+ 					}
+					i {
+						font-size: 20px;
+						color: var(--heading);
+						line-height: 1;
+						display: inline-flex;
+					}
+				}
+				.text {
+					font-size: 30px;
+					color: var(--heading);
+					line-height: 1.5;
+					@media screen and (max-width: 1169px) {
+						font-size: 24px;
+					}
+				}
+			}
+			.rating {
+				margin-top: 20px;
+				i {
+					color: var(--primary);
+					font-size: 18px;
+					line-height: 1;
+					display: inline-flex;
+				}
+			}
+		}
+		.featured_image {
+			img {
+				display: block;
+				width: 100%;
+				@media screen and (max-width: 767px) {
+					max-height: 400px;
+					object-position: center;
+					object-fit: cover;
+				}
+			}
+		}
+	}
+	.slide-testimonials{
+		position: relative;
+		.owl-dots {
+			position: absolute;
+			bottom: 0;
+			left: 50%;
+			text-align: center;
+			background: #fff;
+			padding: 14px 30px;
+			.owl-dot{
+				display: inline-flex;
+				align-items: center;
+				justify-content: center;
+				border-radius: 50%;
+				margin: 0 2px;
+				width: 21px;
+				height: 21px;
+				span{
+					width: 5px;
+					height: 5px;
+					background: rgba(29, 27, 26, 0.20);
+					display: block;
+					border-radius: inherit;
+					-webkit-backface-visibility: visible;
+					transition: opacity .2s ease;
+				}
+				&.active{
+					border: 1px solid var(--primary);
+					span{
+						opacity: 1;
+						background: var(--primary);
+					}
+				}
+			}
+		}
+	}
+}

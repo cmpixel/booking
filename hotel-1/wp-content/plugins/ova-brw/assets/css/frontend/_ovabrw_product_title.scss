@@ -1,0 +1,9 @@
+.ovabrw_product_title {
+	.ovabrw_title {
+		margin: 0;
+		font-size: 50px;
+		@media (max-width: 767px) {
+			font-size: 45px;
+		}
+	}
+}

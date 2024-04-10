@@ -1,0 +1,32 @@
+.ovabrw-room-ajax {
+
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-gap: 30px;
+	grid-row-gap: 60px;
+
+	@media screen and (max-width: 1200px) {
+		grid-template-columns: 1fr 1fr;
+	}
+
+	@media screen and (max-width: 767px) {
+		grid-template-columns: 1fr;
+	}
+
+	&.ovabrw-room-ajax-template2 {
+		margin: 0 auto;
+		max-width: 1180px;
+		grid-template-columns: auto;
+	}
+
+	&.ovabrw-room-ajax-template3 {
+		margin: 0 auto;
+		max-width: 1140px;
+		grid-template-columns: 1fr 1fr;
+		grid-gap: 60px;
+		@media screen and (max-width: 767px) {
+			grid-template-columns: 1fr;
+		}
+	}
+
+}

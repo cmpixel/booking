@@ -1,0 +1,71 @@
+.ova-special-offer {
+	min-height: 460px;
+	position: relative;
+	.image {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+		&:before {
+			position: absolute;
+			content: "";
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background: linear-gradient(90deg, rgba(12, 11, 11, 0.85) 0%, rgba(12, 11, 11, 0.00) 100%);
+		}
+		
+	}
+	.content {
+		position: absolute;
+		top: 50%;
+		left: 0;
+		transform: translateY(-50%);
+		margin-left: 100px;
+		@media screen and (max-width: 767px) {
+			margin-left: 0;
+			padding: 40px;
+		}
+		.subtitle {
+			margin: 0;
+			color: #fff;
+			font-size: 18px;
+			font-weight: 500;
+		}
+		.title {
+			margin: 0;
+			margin-top: 10px;
+			color: #FFF;
+			font-size: 48px;
+			white-space: pre-wrap;
+			line-height: 1.1;
+			@media screen and (max-width: 480px) {
+				font-size: 42px;
+			}
+		}
+		.text_link {
+			margin-top: 50px;
+			display: inline-block;
+			color: #fff;
+			font-weight: 500;
+			background: var(--primary);
+			padding: 11px 33px;
+			border: 1px solid transparent;
+			transition: all .3s linear;
+			&:hover {
+				background: var(--primary-hover);
+				border-color: #fff;
+			}
+			i {
+				display: inline-flex;
+				line-height: 1;
+				margin-left: 5px;
+			}
+		}
+	}
+}

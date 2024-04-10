@@ -1,0 +1,96 @@
+.ova-price {
+	background: #0C0B0B;
+	padding: 70px 50px 50px 50px;
+	text-align: center;
+	@media screen and (max-width: 480px) {
+		padding: 50px 30px 30px 30px;
+	}
+	.title {
+		margin: 0;
+		color: #fff;
+		font-family: var(--secondary-font);
+		font-weight: 600;
+		font-size: 30px;
+	}
+	.price {
+		margin: 0;
+		margin-top: 15px;
+		color: #FFF;
+		font-family: var(--secondary-font);
+		font-size: 65px;
+		font-weight: 600;
+		line-height: 1;
+	}
+	.after_price {
+		margin: 0;
+		margin-top: 18px;
+		color: rgba(255, 255, 255, 0.65);
+		font-size: 18px;
+	}
+	.list-item {
+		margin: 0;
+		padding: 50px 0px 0px 5px;
+		margin-top: 50px;
+		border-top: 1px solid rgba(255, 255, 255, 0.07);
+		list-style: none;
+		.item {
+			margin-bottom: 15px;
+			display: flex;
+			align-items: center;
+			column-gap: 10px;
+			@media (max-width: 767px) {
+				justify-content: center;
+			}
+			.icon {
+				vertical-align: middle;
+				line-height: 1;
+				i {
+					font-size: 24px;
+					color: rgba(255, 255, 255, 0.5);
+					line-height: 1;
+					display: inline-flex;
+				}
+			}
+			.text {
+				color: rgba(255, 255, 255, 0.5);
+				font-size: 18px;
+			}
+			&.active {
+				.icon {
+					i {
+						color: var(--primary);
+					}
+				}
+				.text {
+					color: #fff;
+				}
+			}
+		}
+	}
+	.text_link {
+		transition: all .3s linear;
+		margin-top: 25px;
+		display: inline-block;
+		padding: 11px 43px;
+		color: rgba(255, 255, 255, 0.65);
+		font-weight: 600;
+		transition: all .3s linear;
+		background: rgba(255, 255, 255, 0.10);
+		
+		&:hover {
+			color: #fff;
+			background: var(--primary);
+			i {
+				color: #fff;
+			}
+		}
+
+		i {
+			font-size: 12px;
+			color: rgba(255, 255, 255, 0.65);
+			display: inline-flex;
+			line-height: 1;
+			vertical-align: middle;
+		}
+	}
+}

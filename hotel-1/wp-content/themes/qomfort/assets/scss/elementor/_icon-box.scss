@@ -1,0 +1,141 @@
+.ova-icon-box {
+	transition: all .3s linear;
+	&:hover {
+		transition: all .3s linear;
+	}
+	.icon {
+		transition: all .3s linear;
+		i {
+			transition: all .3s linear;
+			display: inline-flex;
+			color: var(--primary);
+		}
+	}
+	.title {
+		transition: all .3s linear;
+		margin: 0;
+	}
+	.desc {
+		margin: 0;
+	}
+	.text_link {
+		display: inline-block;
+		color: var(--text);
+		font-weight: 600;
+		position: relative;
+		transition: all .3s linear;
+		&:hover {
+			color: var(--primary);
+			&:before {
+				width: 100%;
+			}
+		}
+		&:before {
+			position: absolute;
+			content: "";
+			width: 0;
+			height: 1px;
+			background: var(--primary);
+			bottom: 0;
+			left: 0;
+			transition: all .3s linear;
+		}
+		i {
+			font-size: 12px;
+			display: inline-flex;
+			line-height: 1;
+			vertical-align: middle;
+		}
+	}
+	&.template_1 {
+		padding: 15px;
+		.icon {
+			i {
+				font-size: 50px;
+			}
+		}
+		.title {
+			margin-top: 30px;
+			font-size: 24px;
+			font-weight: 600;
+			color: #292929;
+		}
+		.desc {
+			margin-top: 14px;
+		}
+		.text_link {
+			margin-top: 24px;
+		}
+	}
+	&.template_2 {
+		text-align: center;
+		padding: 35px 20px 25px 20px;
+		&:hover {
+			box-shadow: 0px 4px 60px 0px rgba(0, 0, 0, 0.07);
+			.icon {
+				background: var(--primary);
+				i {
+					color: #fff;
+				}
+			}
+		}
+		.icon {
+			width: 80px;
+			height: 80px;
+			border-radius: 50%;
+			background: #F7F0EB;
+			display: inline-flex;
+			align-items: center;
+			justify-content: center;
+			i {
+				font-size: 40px;
+			}
+		}
+		.title {
+			margin-top: 34px;
+			font-family: var(--secondary-font);
+			font-size: 27px;
+		}
+		.desc {
+			margin-top: 15px;
+		}
+		.text_link {
+			margin-top: 20px;
+		}
+	}
+	&.template_3 {
+		padding: 30px 20px;
+		background-color: #fff;
+		&:hover {
+			background-color: var(--primary);
+			.icon {
+				i {
+					transition: all .3s linear;
+					color: #fff;
+				}
+			}
+			.title {
+				transition: all .3s linear;
+				color: #fff;
+			}
+			.desc{
+				transition: all .3s linear;
+				color: #fff;
+			}
+			.text_link {
+				transition: all .3s linear;
+				color: #fff;
+			}
+		}
+		.icon {
+			margin-bottom: 5px;
+			i {
+				font-size: 50px;
+			}
+		}
+		.title {
+			font-size: 20px;
+			font-weight: 600;
+		}
+	}
+}

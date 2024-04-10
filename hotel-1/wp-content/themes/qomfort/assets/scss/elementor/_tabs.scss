@@ -1,0 +1,96 @@
+.elementor-widget-tabs {
+	.elementor-tabs {
+		.elementor-tabs-wrapper {
+			.elementor-tab-title {
+				display: inline-block;
+			}
+		}
+		.elementor-tabs-content-wrapper {
+			> .elementor-tab-mobile-title {
+				&:before {
+					font-size: 14px;
+					float: right;
+					content: "\f199";
+					font-family: ovaicon !important;
+				    font-style: normal;
+				    font-weight: normal !important;
+				    font-variant: normal;
+				    text-transform: none;
+				    line-height: inherit;
+				    -webkit-font-smoothing: antialiased;
+				    -moz-osx-font-smoothing: grayscale;
+				}
+
+				&.elementor-active {
+					&:before {
+						content: "\f19b";
+					}
+				}
+			}
+		}
+	}
+	&.ova-tabs {
+		.elementor-tabs {
+			.elementor-tabs-wrapper {
+				display: flex;
+				gap: 80px;
+				flex-wrap: wrap;
+				.elementor-tab-title {
+					&.elementor-active {
+						position: relative;
+						&:before {
+							position: absolute;
+							content: "";
+							left: 0;
+							bottom: 0;
+							width: 45px;
+							height: 3px;
+							background: var(--primary);
+						}
+					}
+				}
+				> div:not(:last-child) {
+					&:after {
+						position: absolute;
+						content: "";
+						right: -40px;
+						top: 50%;
+						transform: translateY(-50%);
+						width: 5px;
+						height: 5px;
+						border-radius: 50%;
+						background: rgba(29, 27, 26, 0.20);
+					}
+				}
+			}
+		}
+	}
+}
+body.rtl {
+	.elementor-widget-tabs {
+		&.ova-tabs {
+			.elementor-tabs {
+				.elementor-tabs-wrapper {
+					.elementor-tab-title {
+						&.elementor-active {
+							&:before {
+								left: unset;
+								right: 0;
+							}
+						}
+					}
+					> div:not(:last-child) {
+						&:after {
+							right: unset;
+							left: -40px;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+.elementor-widget-tabs.elementor-tabs-view-horizontal.ova-tabs .elementor-tab-desktop-title.elementor-active:after {
+	left: unset;
+	right: -40px;
+}

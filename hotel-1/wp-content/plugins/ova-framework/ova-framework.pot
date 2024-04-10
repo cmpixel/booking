@@ -1,0 +1,163 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: OvaTheme Framework\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-04-07 14:18+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: \n"
+"Language: \n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.6.7; wp-6.5\n"
+"X-Domain: ova-framework"
+
+#. Description of the plugin
+msgid "A plugin to create custom Post Type, Shortcode, Elementor"
+msgstr ""
+
+#: inc/class-metaboxes.php:283 inc/class-metaboxes.php:284
+msgid "Add Images"
+msgstr ""
+
+#: inc/class-hf-builder.php:31
+msgid "Add New HF"
+msgstr ""
+
+#: inc/class-hf-builder.php:35
+msgid "All HF"
+msgstr ""
+
+#: inc/class-metaboxes.php:295
+msgid "Change"
+msgstr ""
+
+#: inc/class-metaboxes.php:294
+msgid "Change Image"
+msgstr ""
+
+#: inc/class-metaboxes.php:300
+msgid "Delete"
+msgstr ""
+
+#: inc/class-metaboxes.php:294 inc/class-metaboxes.php:299
+msgid "Delete image"
+msgstr ""
+
+#: inc/class-hf-builder.php:116
+msgid "Display in"
+msgstr ""
+
+#: inc/class-hf-builder.php:33
+msgid "Edit HF"
+msgstr ""
+
+#: inc/class-hf-builder.php:99
+msgid "Elementor Header Footer Option"
+msgstr ""
+
+#. Unique ID
+#: inc/class-metaboxes.php:27
+msgid "Embed setting"
+msgstr ""
+
+#: inc/class-metaboxes.php:265
+msgid "Embed Video Link"
+msgstr ""
+
+#: inc/class-hf-builder.php:118
+msgid "Footer"
+msgstr ""
+
+#: inc/class-metaboxes.php:149
+msgid "Footer Version"
+msgstr ""
+
+#: inc/class-metaboxes.php:36
+msgid "Gallery"
+msgstr ""
+
+#. Unique ID
+#: inc/class-metaboxes.php:19
+msgid "General Setting"
+msgstr ""
+
+#: inc/class-metaboxes.php:224
+msgid "Global"
+msgstr ""
+
+#: inc/class-hf-builder.php:119
+msgid "Header"
+msgstr ""
+
+#: inc/class-metaboxes.php:129
+msgid "Header Version"
+msgstr ""
+
+#. Author URI of the plugin
+msgid "https://themeforest.net/user/ovatheme"
+msgstr ""
+
+#. URI of the plugin
+msgid "https://themeforest.net/user/ovatheme/portfolio"
+msgstr ""
+
+#: inc/class-metaboxes.php:169
+msgid "Main layout"
+msgstr ""
+
+#: inc/class-hf-builder.php:32
+msgid "New HF"
+msgstr ""
+
+#: inc/class-hf-builder.php:39
+msgid "No HF found in Trash."
+msgstr ""
+
+#: inc/class-hf-builder.php:38
+msgid "No HF found."
+msgstr ""
+
+#: inc/class-hf-builder.php:120
+msgid "None"
+msgstr ""
+
+#. Author of the plugin
+msgid "Ovatheme"
+msgstr ""
+
+#. Name of the plugin
+msgid "OvaTheme Framework"
+msgstr ""
+
+#: inc/class-hf-builder.php:37
+msgid "Parent HF:"
+msgstr ""
+
+#: inc/class-metaboxes.php:250
+msgid "Primary Color"
+msgstr ""
+
+#: inc/class-metaboxes.php:221
+msgid "Primary Font"
+msgstr ""
+
+#: inc/class-hf-builder.php:36
+msgid "Search HF"
+msgstr ""
+
+#: inc/class-hf-builder.php:170
+msgid "Theme"
+msgstr ""
+
+#: inc/class-hf-builder.php:34
+msgid "View HF"
+msgstr ""
+
+#: inc/class-metaboxes.php:189
+msgid "Wide Site"
+msgstr ""

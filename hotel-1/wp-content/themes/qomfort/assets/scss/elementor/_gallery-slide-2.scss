@@ -1,0 +1,161 @@
+.ova-gallery-slide-2 {
+
+    .owl-stage-outer{
+        position: relative;
+        z-index: 1;
+    }   
+
+    .gallery-slide {
+        .gallery-box {
+            .list-gallery {
+                position: relative;
+                display: block;
+                overflow: hidden;
+
+                &:before {
+                    @include transaction( all, 0.5s, ease);
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    height: 100%;
+                    width: 100%;
+                    content: "";
+                    background: var(--primary);  
+                    transform: translateY(-100%);
+                    z-index: 1;
+                }
+
+                img {
+                    @include transaction( all, 0.5s, ease);
+                    width: 100%;
+                    object-fit:cover;
+                    transform: scale(1);
+                }
+
+                .icon-box {
+                    @include transaction( all, 0.5s, ease);
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    padding: 20px;
+                    z-index: 1;
+                    opacity: 0;
+                    text-align: center;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-direction: column;
+                    transform: translateY(-100%);
+                    .icon {
+                        i {
+                            color: #fff;
+                            display: inline-flex;
+                            font-size: 42px;
+                        }
+                    }
+                    .title {
+                        position: relative;
+                        margin: 15px 0 0 0;
+                        padding-bottom: 40px;
+                        font-size: 32px;
+                        color: #fff;
+                        line-height: 1.1;
+                        font-weight: 600;
+                        white-space: pre-line;
+                        &:before {
+                            position: absolute;
+                            content: "";
+                            background: #fff;
+                            width: 50px;
+                            height: 4px;
+                            bottom: 0;
+                            left: 50%;
+                            transform: translateX(-50%);
+                        }
+                    }
+                    .subtitle {
+                        margin: 0;
+                        margin-top: 33px;
+                        color: #fff;
+                        font-size: 20px;
+                    }
+                    .desc {
+                        margin: 0;
+                        margin-top: 4px;
+                        font-family: var(--secondary-font);
+                        color: #fff;
+                        font-size: 32px;
+                        font-weight: 600;
+                        line-height: 1;
+                    }
+                    
+                }
+
+            }
+
+            &:hover {
+                .list-gallery {
+
+                    &:before {
+                        @include transaction( all, 0.5s, ease);
+                        transform: translateY(0%);
+                    }
+
+                    img {
+                        @include transaction( all, 0.5s, ease);
+                        transform: scale(1.05);
+                    }
+
+                    .icon-box {
+                        @include transaction( all, 0.5s, ease);
+                        opacity: 1;
+                        transform: translateY(0);
+                    }
+                }
+            }
+            
+        }
+
+        .owl-nav{
+            button{
+                position: absolute;
+                top: 50%;
+                z-index: 1;
+                &.owl-prev{
+                    left: 0;
+                    transform: translate(50%, -50%);
+                }
+                &.owl-next{
+                    right: 0;
+                    transform: translate(-50%, -50%);
+                }
+                i{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+                &:hover{
+                    color: var(--primary);
+                }
+            }   
+        }
+            
+        .owl-dots{
+            margin-top: 30px;
+            text-align: center;
+          
+            button{
+                width: 8px;
+                height: 8px;
+                background-color: var(--secondary);
+                border-radius: 50%;
+                margin: 0px 4px;
+                &.active{
+                    background-color: var(--primary);
+                }
+            }
+        }
+    }
+}

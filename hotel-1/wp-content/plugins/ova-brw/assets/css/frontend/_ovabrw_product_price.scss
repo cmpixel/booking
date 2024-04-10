@@ -1,0 +1,13 @@
+.ovabrw-price {
+	font-size: 27px;
+	font-weight: 500;
+	color: var(--primary)!important;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	@media (max-width: 767px) {
+		font-size: 24px;
+	}
+	.woocommerce-Price-amount {
+		color: var(--primary)!important;
+	}
+}

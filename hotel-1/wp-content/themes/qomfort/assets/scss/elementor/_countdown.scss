@@ -1,0 +1,133 @@
+.ova-countdown {
+	.odometer {
+		@include transaction(all, 0.3s, ease);
+		color: #fff;
+		font-family: var(--secondary-font);
+		font-size: 65px;
+		font-weight: 500;
+	    line-height: 1.3;
+		.odometer-formatting-mark {
+			display: none;
+		}
+	}
+	.suffix {
+		@include transaction(all, 0.3s, ease);
+		color: #fff;
+		font-family: var(--secondary-font);
+		font-size: 65px;
+		font-weight: 500;
+	    line-height: 1.3;
+	}
+
+	.title {
+		@include transaction(all, 0.3s, ease);
+		margin: 0;
+		font-family: var(--primary-font);
+		font-size: 18px;
+		line-height: 1.3;
+		font-weight: 400;
+	}
+	&.template_1 {
+		text-align: center;
+		.number {
+			background: var(--primary);
+		}
+		.title {
+			background: #fff;
+			padding: 10px 0;
+		}
+	}
+	&.template_2 {
+		padding: 0px 35px 20px 35px;
+		background: var(--primary);
+		.title {
+			color: #fff;
+			line-height: 1;
+		}
+	}
+	&.template_3 {
+		text-align: center;
+		.odometer {
+			color: var(--heading);
+			font-weight: 700;
+		}
+		.number {
+			padding: 3px 0 8px 0;
+		}
+		.suffix {
+			color: var(--primary);
+			font-weight: 700;
+		}
+		.title {
+			padding: 15px 0px 15px 0px;
+			border-top: 1px solid rgba(29, 27, 26, 0.10);
+			color: #909090;
+		}
+	}
+	&.template_4 {
+		position: relative;
+		background: #0C0B0B;
+		padding: 8px 40px 35px 40px;
+		.icon {
+			position: absolute;
+			top: -80px;
+			left: 40px;
+			width: 80px;
+			height: 80px;
+			background: var(--primary);
+			display: inline-flex;
+			align-items: center;
+			justify-content: center;
+			i {
+				display: inline-flex;
+				line-height: 1;
+				font-size: 33px;
+				color: #fff;
+			}
+			svg {
+				fill: #fff;
+				width: 33px;
+				height: 33px;
+				path {
+					fill: #fff;
+				}
+			}
+		}
+		.suffix {
+			color: var(--primary);
+		}
+		.title {
+			color: rgba(255, 255, 255, 0.65);
+			font-size: 22px;
+		}
+	}
+	&.template_5 {
+		display: flex;
+		align-items: center;
+		column-gap: 45px;
+		@media screen and (max-width: 480px) {
+			flex-wrap: wrap;
+		}
+		.odometer {
+			color: var(--primary);
+			font-weight: 700;
+		}
+		.number {
+			flex-shrink: 0;
+		}
+		.suffix {
+			color: var(--primary);
+			font-weight: 700;
+		}
+		.title {
+			font-size: 30px;
+			color: var(--heading);
+			font-weight: 700;
+			font-family: var(--secondary-font);
+		}
+		.desc{
+			margin: 0;
+			margin-top: 12px;
+		}
+	}
+}

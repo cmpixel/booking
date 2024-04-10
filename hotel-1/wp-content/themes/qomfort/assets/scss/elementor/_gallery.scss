@@ -1,0 +1,145 @@
+.ova-gallery {
+    .grid {
+        &:after {
+            content: '';
+            display: block;
+            clear: both;
+        }
+
+        .grid-sizer, .grid-item {
+            width: 25%;
+            height: auto;
+        }
+        .grid-width-2 {
+            width: 50%;
+        }
+
+        .grid-item {
+            float: left;
+            padding: 15px;
+            @media (max-width: 1024px) {
+                padding: 10px;
+            }
+             @media (max-width: 767px) {
+                padding: 5px;
+            }
+
+            .gallery-fancybox {
+                display: block;
+                position: relative;
+
+                img {
+                    display: block;
+                    width: 100%;
+                    height: 435px;
+                    object-fit: cover;
+                    object-position: center;
+                }
+
+                .gallery-container {
+                    position: absolute;
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                    top: 0;
+                    cursor: pointer;
+
+                    &:before {
+                        content: '';
+                        position: absolute;
+                        top: 0;
+                        display: block;
+                        width: 100%;
+                        height: 100%;
+                        background: rgba(29, 27, 26, 0.85);
+                        -webkit-transition: all .3s ease;
+                        -moz-transition: all .3s ease;
+                        -o-transition: all .3s ease;
+                        transition: all .3s ease;
+                        opacity: 0;
+                    }
+
+                    .gallery-content {
+                        position: absolute;
+                        width: 100%;
+                        height: 100%;
+                        padding: 20px 40px;
+                        visibility: hidden;
+                        -webkit-transition: all .3s ease;
+                        -moz-transition: all .3s ease;
+                        -o-transition: all .3s ease;
+                        transition: all .3s ease;
+
+                        .gallery-title {
+                            position: absolute;
+                            width: 100%;
+                            bottom: 20%;
+                            left: 50%;
+                            text-align: center;
+                            margin: 0;
+                            color: #fff;
+                            font-size: 40px;
+                            font-weight: 600;
+                            opacity: 0;
+                            transform: translate(-50%, 100%);
+                            -webkit-transition: all .3s ease;
+                            -moz-transition: all .3s ease;
+                            -o-transition: all .3s ease;
+                            transition: all .3s ease;
+                        }
+                    }
+                }
+            }
+
+            &:hover {
+                .gallery-fancybox {
+                    .gallery-container {
+                        &:before {
+                            opacity: 1;
+                        }
+
+                        .gallery-content {
+                            visibility: visible;
+                            .gallery-title {
+                                bottom: 50%;
+                                opacity: 1;
+                                transform: translate(-50%,50%);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        @media screen and (max-width: 1023px) {
+            .grid-item {
+                width: 50%;
+            }
+        }
+
+        @media screen and (max-width: 767px) {
+            margin-left: 0;
+            .grid-item {
+                width: 100%;
+                padding-right: 0;
+                .gallery-fancybox {
+                    img {
+                        height: auto;
+                        max-height: 400px;
+                    }
+                }
+            }
+            .grid-width-2 {
+                width: 100%;
+            }
+        }
+    }
+}
+
+.fancybox__content img {
+  cursor: zoom-in;
+}
+
+.fancybox__caption {
+  text-align: center;
+}

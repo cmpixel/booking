@@ -1,0 +1,95 @@
+@font-face {
+    font-family: "flaticon_qomfort";
+    src: url("./flaticon_qomfort.ttf?f27ca9c5c4a70c40b6e10f4963b93d7d") format("truetype"),
+url("./flaticon_qomfort.woff?f27ca9c5c4a70c40b6e10f4963b93d7d") format("woff"),
+url("./flaticon_qomfort.woff2?f27ca9c5c4a70c40b6e10f4963b93d7d") format("woff2"),
+url("./flaticon_qomfort.eot?f27ca9c5c4a70c40b6e10f4963b93d7d#iefix") format("embedded-opentype"),
+url("./flaticon_qomfort.svg?f27ca9c5c4a70c40b6e10f4963b93d7d#flaticon_qomfort") format("svg");
+}
+
+i[class^="qomfort-"]:before, i[class*=" qomfort-"]:before {
+    font-family: flaticon_qomfort !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.qomfort-location:before {
+    content: "\f101";
+}
+.qomfort-check-mark:before {
+    content: "\f102";
+}
+.qomfort-stationary-bike:before {
+    content: "\f103";
+}
+.qomfort-jacuzzi:before {
+    content: "\f104";
+}
+.qomfort-swim:before {
+    content: "\f105";
+}
+.qomfort-relax:before {
+    content: "\f106";
+}
+.qomfort-restaurant:before {
+    content: "\f107";
+}
+.qomfort-transportation:before {
+    content: "\f108";
+}
+.qomfort-transportation-1:before {
+    content: "\f109";
+}
+.qomfort-spa:before {
+    content: "\f10a";
+}
+.qomfort-wifi-router:before {
+    content: "\f10b";
+}
+.qomfort-drink:before {
+    content: "\f10c";
+}
+.qomfort-bathtub:before {
+    content: "\f10d";
+}
+.qomfort-swimming-pool:before {
+    content: "\f10e";
+}
+.qomfort-mop:before {
+    content: "\f10f";
+}
+.qomfort-food-delivery:before {
+    content: "\f110";
+}
+.qomfort-treadmill:before {
+    content: "\f111";
+}
+.qomfort-facial:before {
+    content: "\f112";
+}
+.qomfort-mission:before {
+    content: "\f113";
+}
+.qomfort-hotel:before {
+    content: "\f114";
+}
+.qomfort-champagne:before {
+    content: "\f115";
+}
+.qomfort-laundry-machine:before {
+    content: "\f116";
+}
+.qomfort-location-1:before {
+    content: "\f117";
+}
+.qomfort-email-marketing:before {
+    content: "\f118";
+}
+.qomfort-call:before {
+    content: "\f119";
+}

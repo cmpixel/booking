@@ -1,0 +1,95 @@
+// CSS no product
+.ovabrw_elementor_no_product {
+	background-color: rgba(213,218,223,.8);
+	&:not(:lass-child) {
+		margin-bottom: 20px;
+	}
+	span {
+		color: #6d6d6d;
+	    font-size: 22px;
+	    display: block;
+	    text-align: center;
+	    padding: 10px 0;
+	    font-weight: 400;
+	    font-style: normal;
+	    font-variant: normal;
+	    line-height: 1;
+	    text-rendering: auto;
+	    -webkit-font-smoothing: antialiased;
+	}
+}
+
+.ovabrw_not_found_product {
+	font-size: 27px;
+	font-style: italic;
+	text-align: center;
+}
+
+.elementor-column.ova_sticky_column {
+	position: sticky;
+	top: 50px;
+	left: 0;
+	height: fit-content;
+	margin-bottom: 50px;
+}
+
+// Calendar
+.xdsoft_datetimepicker {
+	border-radius: 5px;
+	margin-top: 3px;
+
+	.xdsoft_label>.xdsoft_select>div>.xdsoft_option {
+
+		&.xdsoft_current {
+			transition: all .3s ease;
+			background: var(--primary);
+			box-shadow: 0px 4px 40px rgba(43, 89, 255, 0.08);
+		}
+		
+		&:hover {
+			background: var(--primary);
+		}
+	}
+
+	.xdsoft_calendar {
+		th {
+			color:var(--heading);
+		}
+
+		td>div {
+			text-align: center;
+			padding: 0;
+		}
+
+		td {
+			transition: all .3s ease;
+			color: var(--heading);
+
+			&.xdsoft_disabled {
+			    opacity: 0.3 !important;
+    			cursor: not-allowed !important;
+			}
+
+			&.xdsoft_other_month {
+				opacity: 1 !important;
+				&.xdsoft_disabled {
+					opacity: 1 !important;
+				}
+			}
+
+			&.xdsoft_current {
+				color: #FFFFFF !important;
+				background: var(--primary) !important;  
+				box-shadow: 0px 4px 40px rgba(43, 89, 255, 0.08);
+			}
+
+			&.xdsoft_today {
+				color: var(--primary);
+			}
+
+			&:hover {
+				background: var(--primary) !important;
+			}
+		}
+	}
+}
